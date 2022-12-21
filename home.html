@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221222040318">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a class="header__logo-box" href="#">
+					<img src="img/imgLogo.svg" alt="logo image" />
+					<p class="header__logo-name">SUV</p>
+				</a>
+				<div class="header__decor"></div>
+				<div class="header__contact-box">
+					<a href="tel:5556534" class="header__phone">
+						<span class="header__phone-label">Telephone:</span>
+						<span class="header__phone-number">555-65-34</span>
+					</a>
+					<div class="header__decor-vertical"></div>
+					<div class="header__address">
+						<span class="header__address-label">Address:</span>
+						<span class="header__address-place">Merton Street - 10</span>
+					</div>
+				</div>
+				<div class="header__decor"></div>
+				<div class="header__burger-box">
+					<div class="header__burger-bg">
+						<button type="button" class="header__burger menu__icon icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="mainpage">
+			<div class="mainpage__container">
+				<!-- . -->
+				<div class="mainpage__menu menu">
+					<nav class="menu__body">
+						<h3 class="menu__title">Contact us via:</h3>
+						<ul class="menu__list">
+							<li class="menu__item menu__item_facebook">
+								<a href="#" class="menu__link">facebook</a>
+							</li>
+							<li class="menu__item menu__item_instagram">
+								<a href="#" class="menu__link menu__link_instagram">instagram</a>
+							</li>
+							<li class="menu__item menu__item_twitter">
+								<a href="#" class="menu__link menu__link_twitter">twitter</a>
+							</li>
+							<li class="menu__item menu__item_phone">
+								<a href="tel:" class="menu__link menu__link_phone">phone</a>
+							</li>
+							<li class="menu__item menu__item_e-mail">
+								<a href="email:" class="menu__link menu__link_e-mail">e-mail</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- . -->
+				<!--{{{-->
+				<div class="mainpage-text__slider">
+					<div class="mainpage-text__swiper">
+						<div class="mainpage-text__slide">
+							<div class="mainpage-text__slide-box box-slide">
+								<h3 class="box-slide__title">
+									SUV for <span>every</span> occasion
+								</h3>
+								<p class="box-slide__descr">
+									We will select for you any SUV in the shortest time,
+									according to your wishes and all the necessary needs.
+								</p>
+								<button data-micromodal-open="modal-1" class="button box-slide__button">
+									<span>place order</span>
+								</button>
+							</div>
+						</div>
+						<div class="mainpage-text__slide">
+							<div class="mainpage-text__slide-box box-slide">
+								<h3 class="box-slide__title">
+									Individual approach <span>to every</span> customer
+								</h3>
+								<p class="box-slide__descr">
+									We select all cars individually for each customer and care
+									about the result
+								</p>
+								<button data-micromodal-open="modal-1" class="button box-slide__button">
+									<span>place order</span>
+								</button>
+							</div>
+						</div>
+						<div class="mainpage-text__slide">
+							<div class="mainpage-text__slide-box box-slide">
+								<h3 class="box-slide__title">
+									Choosing <span>the best model</span> from the range
+								</h3>
+								<p class="box-slide__descr">
+									In our product range we have hundreds of different models of
+									SUVs that will satisfy even the most demanding customer
+								</p>
+								<button data-micromodal-open="modal-1" class="button box-slide__button">
+									<span>place order</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--}}}-->
+				<!--{{{-->
+				<div class="mainpage__slider">
+					<div class="mainpage__swiper">
+						<div class="mainpage__slide">
+							<div class="mainpage-slide__bg" style="background-image: url(../img/imgHeroSlider-1.jpg)" data-swiper-parallax="23%"></div>
+						</div>
+						<div class="mainpage__slide">
+							<div class="mainpage-slide__bg" style="background-image: url(../img/imgHeroSlider-2.jpg)" data-swiper-parallax="23%"></div>
+						</div>
+						<div class="mainpage__slide">
+							<div class="mainpage-slide__bg" style="background-image: url(../img/imgHeroSlider-3.jpg)" data-swiper-parallax="23%"></div>
+						</div>
+					</div>
+				</div>
+				<!--}}}-->
+				<div class="mainpage__pagination-count conunt-pagination">
+					<span class="conunt-pagination__current">01</span> /
+					<span class="conunt-pagination__total"></span>
+				</div>
+				<div class="mainpage__pagination-current current-num">
+					<span class="current-num__digit">01</span><span class="current-num__dot">.</span>
+				</div>
+				<div class="mainpage__gear"></div>
+			</div>
+		</main>
+		<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+					<header class="modal__header">
+						<button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+						<div class="fuck"></div>
+						<h2 class="modal__title" id="modal-1-title">Place Order</h2>
+					</header>
+					<form action="#">
+						<main class="modal__content">
+							<input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Enter Name" class="modal__input input" />
+							<input autocomplete="off" type="tel" name="form[]" data-error="Error" placeholder="Enter Phone" class="modal__input input" />
+							<textarea autocomplete="off" name="form[]" placeholder="Enter message" data-error="Error" class="modal__input input modal__textarea"></textarea>
+						</main>
+						<footer class="modal__footer">
+							<button type="submit" class="modal__button button">
+								<span>Send</span>
+							</button>
+						</footer>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- . -->
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__box">
+					<div class="footer__soc-box social-items">
+						<a href="#" class="social-items__share"></a>
+						<a href="#" class="social-items__facebook"></a>
+						<a href="#" class="social-items__twitter"></a>
+						<a href="#" class="social-items__instagram"></a>
+					</div>
+					<div class="footer__nav-box box-nav">
+						<div class="box-nav__dots">
+							<div class="box-nav__pagging"></div>
+						</div>
+						<div class="box-nav__scroll">
+							<div class="box-nav__scroll-bar"></div>
+						</div>
+						<div class="box-nav__arrows">
+							<div class="box-nav__arrow-prev"></div>
+							<div class="box-nav__arrow-next"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<!---->
+	<script src="js/app.min.js?_v=20221222040318"></script>
+</body>
+
+</html>
