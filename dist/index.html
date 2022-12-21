@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>«car_rent»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<h1>PROJECT NAME: car_rent</h1>
+		<ul class="rootpage__list">
+			<li>>page 1:<a target="_blank" href="home.html">main</a></li>
+		</ul>
+		<div class="rootpage__info">>PROJECT DESCRIPTION:</div>
+		<div class="rootpage__descr-box">
+			<p class="rootpage__descr">
+				Adipisicing ea provident iure quidem vitae Asperiores corporis minima
+				labore quam quos Sint quia facere sit sunt unde. Sapiente enim
+			</p>
+		</div>
+		<div class="rootpage__cont-tnx-box">
+			<div class="rootpage__tnx">
+				<p class="rootpage__subtitle">brought to you by:</p>
+				<p class="rootpage__name">Johny Krill</p>
+				<p class="rootpage__text">Positive feedback would be appreciated!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<p class="rootpage__subtitle">contact me again:</p>
+				<p><a href="mailto:email@gmail.com">email@gmail.com</a></p>
+				<p><a href="tel:8800800800">8 800 800 800</a></p>
+			</div>
+		</div>
+		<img class="body__bg" src="imgCurlIndexBg.svg" alt="" />
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+	}
+
+	body {
+		font-family: Space Mono;
+		font-size: 100%;
+		line-height: 1;
+		background-color: #222831;
+		/* background: #222831 url('img/imgCurlIndexBg.svg') 50% 0 / cover no-repeat; */
+	}
+
+	a {
+		text-decoration: none;
+		font-size: 32px;
+		color: #f5f5f5;
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #f5f5f5;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	ul li {
+		font-size: 32px;
+		color: #f26969;
+		list-style: none;
+		display: flex;
+		gap: 60px;
+	}
+
+	@media (max-width: 478px) {
+		ul li {
+			gap: 5px;
+			font-size: 24px;
+		}
+
+		ul li a {
+			font-size: 24px;
+		}
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		overflow: hidden;
+		position: relative;
+		padding-inline: 25%;
+		padding-block: 5%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		/* background: #222831 url('img/imgCurlIndexBg.svg') 50% 0 / cover no-repeat; */
+	}
+
+	.rootpage>* {
+		z-index: 3;
+	}
+
+	.body__bg {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		rotate: 15deg;
+		translate: -50% 0;
+		min-height: 100%;
+		width: auto;
+	}
+
+	@media (max-width: 1300px) {
+		.rootpage {
+			padding-inline: 15%;
+		}
+
+	}
+
+	@media (max-width: 768px) {
+		.rootpage {
+			padding-inline: 5%;
+		}
+
+	}
+
+	h1 {
+		color: #f26969;
+		font-size: 48px;
+		margin: 0px 0px 2.25rem 0px;
+	}
+
+	@media (max-width: 478px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #f26969;
+		font-size: 32px;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	.rootpage__subtitle {
+		font-size: 26px;
+		color: #a1b8ce;
+	}
+
+	.rootpage__info {
+		color: #f26969;
+		font-size: 36px;
+		text-transform: uppercase;
+		margin: 0px 0px 16px 0px;
+
+		@media (max-width: em(1300)) {}
+	}
+
+	.rootpage__descr {
+		padding: 20px;
+		background: rgba(29, 33, 40, 0.7);
+		border: 3px solid rgba(78, 91, 112, 0.3);
+		border-radius: 10px;
+		font-size: 24px;
+		color: #f5f5f5;
+		margin-block-end: 50px;
+		line-height: 1.4;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 0;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 16px 0px;
+	}
+
+	.rootpage__cont-tnx-box {
+		line-height: 300%;
+		display: grid;
+		gap: 50px;
+		width: 100%;
+	}
+
+	@media (max-width: 478px) {
+		.rootpage__contacts a {
+			font-size: 22px;
+		}
+	}
+
+
+	@media (min-width: 1500px) {
+		.rootpage__cont-tnx-box {
+			grid-template-columns: repeat(2, minmax(260px, 1fr));
+			gap: 20px;
+		}
+
+	}
+
+	.rootpage__contacts,
+	.rootpage__tnx {
+		background: rgba(78, 91, 112, 0.3);
+		border-radius: 10px;
+		padding-block: 20px;
+		padding-inline: 10%;
+	}
+
+	.rootpage__contacts {
+		font-size: 30px;
+
+		color: #f5f5f5;
+	}
+
+	.rootpage__contacts a {}
+
+	.rootpage__tnx {}
+
+	.rootpage__name {
+		padding-bottom: 10px;
+		font-size: 32px;
+		color: #f5f5f5;
+	}
+
+	.rootpage__text {
+		font-size: 20px;
+		line-height: 30px;
+		color: #F5F5F5;
+	}
+
+	rootpage__text
+</style>
+
+</html>
