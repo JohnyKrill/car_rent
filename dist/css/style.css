@@ -1125,14 +1125,14 @@ body {
   color: #7e7e7e;
   gap: 1.25rem;
 }
-@media (min-width: 81.875em) {
+@media (min-width: 83.125em) {
   .menu__list {
-    font-size: 2.5rem;
+    font-size: 3.75rem;
   }
 }
-@media (min-width: 20em) and (max-width: 81.875em) {
+@media (min-width: 20em) and (max-width: 83.125em) {
   .menu__list {
-    font-size: clamp( 2.5rem , 2.5rem  +  0vw , 2.5rem );
+    font-size: clamp( 2.5rem , 2.103960396rem  +  1.9801980198vw , 3.75rem );
   }
 }
 @media (max-width: 20em) {
@@ -1336,6 +1336,21 @@ body {
 }
 @media (min-width: 47.99875em) and (min-width: 81.25em) {
   .conunt-pagination {
+    right: 5.3125rem;
+  }
+}
+@media (min-width: 47.99875em) and (min-width: 48em) and (max-width: 81.25em) {
+  .conunt-pagination {
+    right: clamp( 0.3125rem , -6.9055451128rem  +  15.037593985vw , 5.3125rem );
+  }
+}
+@media (min-width: 47.99875em) and (max-width: 48em) {
+  .conunt-pagination {
+    right: 0.3125rem;
+  }
+}
+@media (min-width: 47.99875em) and (min-width: 81.25em) {
+  .conunt-pagination {
     top: 6.875rem;
   }
 }
@@ -1347,21 +1362,6 @@ body {
 @media (min-width: 47.99875em) and (max-width: 48em) {
   .conunt-pagination {
     top: 5.3125rem;
-  }
-}
-@media (min-width: 47.99875em) and (min-width: 81.25em) {
-  .conunt-pagination {
-    right: 5.3125rem;
-  }
-}
-@media (min-width: 47.99875em) and (min-width: 48em) and (max-width: 81.25em) {
-  .conunt-pagination {
-    right: clamp( 0rem , -7.6691729323rem  +  15.977443609vw , 5.3125rem );
-  }
-}
-@media (min-width: 47.99875em) and (max-width: 48em) {
-  .conunt-pagination {
-    right: 0rem;
   }
 }
 @media (min-width: 47.99875em) {
