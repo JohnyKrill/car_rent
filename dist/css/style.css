@@ -1257,19 +1257,19 @@ body {
   font-weight: 500;
   line-height: 170%;
 }
-@media (min-width: 81.875em) {
+@media (min-width: 81.25em) {
   .box-slide__descr {
     font-size: 0.8125rem;
   }
 }
-@media (min-width: 20em) and (max-width: 81.875em) {
+@media (min-width: 20em) and (max-width: 81.25em) {
   .box-slide__descr {
-    font-size: clamp( 0.8125rem , 0.8125rem  +  0vw , 0.8125rem );
+    font-size: clamp( 1rem , 1.0612244898rem  +  -0.306122449vw , 0.8125rem );
   }
 }
 @media (max-width: 20em) {
   .box-slide__descr {
-    font-size: 0.8125rem;
+    font-size: 1rem;
   }
 }
 .box-slide__button {
@@ -1284,19 +1284,19 @@ body {
   padding-block: 1.0625rem;
   padding-inline: 2.375rem;
 }
-@media (min-width: 81.875em) {
+@media (min-width: 81.25em) {
   .box-slide__button {
     font-size: 0.625rem;
   }
 }
-@media (min-width: 20em) and (max-width: 81.875em) {
+@media (min-width: 20em) and (max-width: 81.25em) {
   .box-slide__button {
-    font-size: clamp( 0.625rem , 0.625rem  +  0vw , 0.625rem );
+    font-size: clamp( 0.75rem , 0.7908163265rem  +  -0.2040816327vw , 0.625rem );
   }
 }
 @media (max-width: 20em) {
   .box-slide__button {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
 }
 .box-slide__button::before {
